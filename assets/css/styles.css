@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Seccion del menu de navegacion*/
+body{
+    background: url("https://images7.alphacoders.com/100/1009267.png") no-repeat center center fixed;
+    margin: 0;
+    font-family: "Contrail One", sans-serif;
+    background-size: cover;
+    padding:0;
+    height: 100%;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav{
+    background-color: transparent;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav__list{
+    margin: 0;
+}
+.nav__item{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.228);
+    border-radius:20px;
+}
+
+.nav__item:hover{
+    background:linear-gradient(to right, white, purple);
+}
+
+.nav__link{
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
+/*Utility clases*/
+
+.container{
+    
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.boton-volver {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #e060d1;
+    border: 1px solid orange;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.boton-volver:hover {
+    background-color: #0056b3;
+}
+
+/*main-header*/
+.main-header{
+    text-align: center;
+    
+}
+
+.logo{
+    width: 300px;
+    padding: 20px 0px;
+}
+
+.box{
+    
+    box-sizing: border-box;
+    margin:auto;
+    min-width:800px;
+    width: 800px;
+}
+
+.box--img{
+    height: 450px;
+    filter: drop-shadow(0 20px 5px rgba(0, 0, 0, 0.378));
+    position: relative;
+    top: 100px;
+    left: -430px;
+}
+
+.main-header > p{
+    position: relative;
+    background: linear-gradient(to right, black, orange);
+    color:white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    padding: 50px;
+    text-align:justify;
+    z-index: -1;
+    top: -300px;
+}
+
+/*personajesPrincipales*/
+
+#personajesPrincipales{
+    background: url("/assets/img/background.jpg") no-repeat center center fixed;
+    min-height: 100vh;
+    background-size: cover;
+    text-align: center;
+}
+
+.personajesPrincipales--box{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container > h2{
+    text-align: center;
+    font-size: 58px;
+    margin: 20px 0;
+    text-shadow: 1px 10px 10px rgba(255, 255, 255, 0.247);
+}
+
+.personajesPrincipales--column{
+    
+    max-width: 900px;
+    width: 900px;
+    margin: auto;
+    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+    padding-bottom: 150px;
+
+}
+
+.imagenNaruto,.imagenSakura, .imagenSasuke{
+    position: absolute;
+    top:0;
+    z-index: 1;
+    filter: drop-shadow(2px 12px 1px rgba(0, 0, 0, 0.471)) ;
+}
+
+.imagenNaruto{
+    width: 200px;
+    left: 20px;
+    top: -100px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+}
+.imagenSasuke{
+    width: 250px;
+    left: 650px;
+    top: -60px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+}
+.imagenSakura{
+    width: 150px;
+    left: 60px;
+    top: -100px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+}
+
+.imagenNaruto:hover{
+    width: 250px;
+    left: -10px;
+}
+.imagenSakura:hover{
+    width: 200px;
+    left: 50px;
+}
+.imagenSasuke:hover{
+    width: 300px;
+    left: 670px;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    top: -30px;
+    left: 220px;
+}
+.flex-item{
+    margin: 0 2px;
+}
+.icon-element{
+    width: 50px;
+}
+.icon-element:hover{
+    width: 60px;
+}
+.personajesPrincipales--box > p{
+    position: relative; /* Ajusta el posicionamiento relativo para que la sombra del texto se aplique correctamente */
+    background-color: rgba(238, 130, 238, 0.802);
+    box-shadow: 0 0 10px black;
+    border-radius: 100px;
+    padding: 50px;
+    margin: 200px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.814);
+    width: 600px;
+    left: 150px;
+    color: white;
+}
+
+
+
+/*historia*/
+
+#historia{
+    margin: 0;
+    padding: -20000px;
+}
+
+.background{
+    background: url("/assets/img/fotohaeditada.png") no-repeat center center fixed;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+
+.info-history{
+    margin: 300px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin: 40px 200px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/*Seccion de historia*/
+
+/*Seccion de jutsus y tecnicas*/
+
+/*Seccion de aldea y localización*/
+
+/*Seccion de curiosidades*/
+
+/*Seccion de galeria*/
+
+/*Seccion de about us*/
+
+/*Seccion de pie de página*/
