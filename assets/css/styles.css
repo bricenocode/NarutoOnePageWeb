@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 
 /*Reset*/
@@ -148,14 +149,17 @@ text-decoration: none;
     padding-bottom: 150px;
 
 }
+/*imagenes personajes*/
 
-.imagenNaruto,.imagenSakura, .imagenSasuke{
+
+.imagenNaruto,.imagenSakura, .imagenSasuke, .imagenKakashi, .imagenJiraya, .imagenItachi, .imagenNagato, .imagenObito{
     position: absolute;
     top:0;
     z-index: 1;
     filter: drop-shadow(2px 12px 1px rgba(0, 0, 0, 0.471)) ;
 }
 
+/*izquierdaPos*/
 .imagenNaruto{
     width: 200px;
     left: 20px;
@@ -164,14 +168,7 @@ text-decoration: none;
     transition-duration: 1s;
     transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
 }
-.imagenSasuke{
-    width: 250px;
-    left: 650px;
-    top: -60px;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
-}
+
 .imagenSakura{
     width: 150px;
     left: 60px;
@@ -181,6 +178,67 @@ text-decoration: none;
     transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
 }
 
+.imagenJiraya{
+    width: 200px;
+    left: 10px;
+    top: -100px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+}
+
+.imagenNagato{
+    width: 230px;
+    left: 0;
+    top: -40px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+}
+
+
+/*derechaPos*/
+.imagenSasuke{
+    width: 250px;
+    left: 650px;
+    top: -60px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+}
+
+.imagenKakashi{
+    width: 200px;
+    left: 650px;
+    top: -60px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    padding: 30px;
+}
+
+.imagenItachi{
+    width: 250px;
+    left: 650px;
+    top: -60px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    padding: 30px;
+}
+
+.imagenObito{
+    width: 300px;
+    left: 650px;
+    top: -100px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    padding: 30px;
+}
+
+/*--HOVERS*/
+/*izquierdaPos*/
 .imagenNaruto:hover{
     width: 250px;
     left: -10px;
@@ -189,10 +247,39 @@ text-decoration: none;
     width: 200px;
     left: 50px;
 }
-.imagenSasuke:hover{
-    width: 300px;
+
+.imagenJiraya:hover{
+    width: 230px;
+    left: 20px;
+}
+
+.imagenNagato:hover{
+    width: 250px;
+    left: 5px;
+}
+
+/*derechaPos*/
+.imagenKakashi:hover{
+    width: 220px;
     left: 670px;
 }
+
+.imagenSasuke:hover{
+    width: 300px;
+    left: 640px;
+}
+
+.imagenObito:hover{
+    width: 320px;
+    left: 640px;
+}
+
+.imagenItachi:hover{
+    width: 300px;
+    left: 640px;
+}
+
+
 
 .flexbox{
     display: flex;
@@ -203,10 +290,10 @@ text-decoration: none;
     left: 220px;
 }
 .flex-item{
-    margin: 0 2px;
+    margin: 0 1px;
 }
 .icon-element{
-    width: 50px;
+    width: 45px;
 }
 .icon-element:hover{
     width: 60px;
