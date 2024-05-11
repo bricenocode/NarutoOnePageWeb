@@ -1,63 +1,63 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 
 /*Reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-/*Seccion del menu de navegacion*/
-body{
+/*SECCION del menu de navegacion*/
+body {
     background: url("https://images7.alphacoders.com/100/1009267.png") no-repeat center center fixed;
     margin: 0;
     font-family: "Contrail One", sans-serif;
     background-size: cover;
-    padding:0;
+    padding: 0;
     height: 100%;
     text-align: center;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.nav{
+.nav {
     background-color: transparent;
     text-align: center;
     margin: 20px 0;
 }
 
-.nav__list{
+.nav__list {
     margin: 0;
 }
-.nav__item{
+
+.nav__item {
     display: inline-block;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.228);
-    border-radius:20px;
+    border-radius: 20px;
 }
 
-.nav__item:hover{
-    background:linear-gradient(to right, white, purple);
+.nav__item:hover {
+    background: linear-gradient(to right, white, purple);
 }
 
-.nav__link{
-color: rgb(0, 0, 0);
-text-decoration: none;
+.nav__link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 /*Utility clases*/
 
-.container{
-    
+.container {
     margin: auto;
     max-width: 1300px;
     overflow: auto;
     padding: 0 20px;
 }
+
 .boton-volver {
     position: fixed;
     bottom: 20px;
@@ -77,25 +77,25 @@ text-decoration: none;
 }
 
 /*main-header*/
-.main-header{
+.main-header {
     text-align: center;
-    
+
 }
 
-.logo{
+.logo {
     width: 300px;
     padding: 20px 0px;
 }
 
-.box{
-    
+.box {
+
     box-sizing: border-box;
-    margin:auto;
-    min-width:800px;
+    margin: auto;
+    min-width: 800px;
     width: 800px;
 }
 
-.box--img{
+.box--img {
     height: 450px;
     filter: drop-shadow(0 20px 5px rgba(0, 0, 0, 0.378));
     position: relative;
@@ -103,29 +103,29 @@ text-decoration: none;
     left: -430px;
 }
 
-.main-header > p{
+.main-header>p {
     position: relative;
     background: linear-gradient(to right, black, orange);
-    color:white;
+    color: white;
     font-size: 24px;
     letter-spacing: 1px;
     border-radius: 10px;
     padding: 50px;
-    text-align:justify;
+    text-align: justify;
     z-index: -1;
     top: -300px;
 }
 
-/*personajesPrincipales*/
+/*SECCION personajes Principales*/
 
-#personajesPrincipales{
+#personajesPrincipales {
     background: url("/assets/img/background.jpg") no-repeat center center fixed;
     min-height: 100vh;
     background-size: cover;
     text-align: center;
 }
 
-.personajesPrincipales--box{
+.personajesPrincipales--box {
     position: relative;
     box-sizing: border-box;
     margin: 0;
@@ -133,155 +133,166 @@ text-decoration: none;
 }
 
 
-.container > h2{
+.container>h2 {
     text-align: center;
     font-size: 58px;
-    margin: 20px 0;
-    text-shadow: 1px 10px 10px rgba(255, 255, 255, 0.247);
+    margin: 40px 0;
+    text-shadow: 0 1px 20px rgb(0, 0, 0);
+    color: white;
 }
 
-.personajesPrincipales--column{
-    
+.personajesPrincipales--column {
+
     max-width: 900px;
     width: 900px;
     margin: auto;
-    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+    overflow: hidden;
+    /* Oculta el contenido que se desborda del contenedor */
     padding-bottom: 150px;
 
 }
-/*imagenes personajes*/
+
+/*--imagenes personajes*/
 
 
-.imagenNaruto,.imagenSakura, .imagenSasuke, .imagenKakashi, .imagenJiraya, .imagenItachi, .imagenNagato, .imagenObito{
+.imagenNaruto,
+.imagenSakura,
+.imagenSasuke,
+.imagenKakashi,
+.imagenJiraya,
+.imagenItachi,
+.imagenNagato,
+.imagenObito {
     position: absolute;
-    top:0;
+    top: 0;
     z-index: 1;
-    filter: drop-shadow(2px 12px 1px rgba(0, 0, 0, 0.471)) ;
+    filter: drop-shadow(2px 12px 1px rgba(0, 0, 0, 0.471));
 }
 
-/*izquierdaPos*/
-.imagenNaruto{
+/*--Posicion Izquierda*/
+.imagenNaruto {
     width: 200px;
     left: 20px;
     top: -100px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
 }
 
-.imagenSakura{
+.imagenSakura {
     width: 150px;
     left: 60px;
     top: -100px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
 }
 
-.imagenJiraya{
+.imagenJiraya {
     width: 200px;
     left: 10px;
     top: -100px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
 }
 
-.imagenNagato{
+.imagenNagato {
     width: 230px;
     left: 0;
     top: -40px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
 }
 
 
-/*derechaPos*/
-.imagenSasuke{
+/*--Posicion Derecha*/
+.imagenSasuke {
     width: 250px;
     left: 650px;
     top: -60px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
 }
 
-.imagenKakashi{
+.imagenKakashi {
     width: 200px;
     left: 650px;
     top: -60px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
     padding: 30px;
 }
 
-.imagenItachi{
+.imagenItachi {
     width: 250px;
     left: 650px;
     top: -60px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
     padding: 30px;
 }
 
-.imagenObito{
+.imagenObito {
     width: 300px;
     left: 650px;
     top: -100px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function:cubic-bezier(0,1.04,.44,1.17);
+    transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
     padding: 30px;
 }
 
 /*--HOVERS*/
-/*izquierdaPos*/
-.imagenNaruto:hover{
+/*--Posicion Izquierda*/
+.imagenNaruto:hover {
     width: 250px;
     left: -10px;
 }
-.imagenSakura:hover{
+
+.imagenSakura:hover {
     width: 200px;
     left: 50px;
 }
 
-.imagenJiraya:hover{
+.imagenJiraya:hover {
     width: 230px;
     left: 20px;
 }
 
-.imagenNagato:hover{
+.imagenNagato:hover {
     width: 250px;
     left: 5px;
 }
 
-/*derechaPos*/
-.imagenKakashi:hover{
+/*--Posicion Derecha*/
+.imagenKakashi:hover {
     width: 220px;
     left: 670px;
 }
 
-.imagenSasuke:hover{
+.imagenSasuke:hover {
     width: 300px;
     left: 640px;
 }
 
-.imagenObito:hover{
+.imagenObito:hover {
     width: 320px;
     left: 640px;
 }
 
-.imagenItachi:hover{
+.imagenItachi:hover {
     width: 300px;
     left: 640px;
 }
 
 
-
-.flexbox{
+/*--iconos de naturaleza de chakra*/
+.flexbox {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -289,17 +300,22 @@ text-decoration: none;
     top: -30px;
     left: 220px;
 }
-.flex-item{
+
+.flex-item {
     margin: 0 1px;
 }
-.icon-element{
+
+.icon-element {
     width: 45px;
 }
-.icon-element:hover{
+
+.icon-element:hover {
     width: 60px;
 }
-.personajesPrincipales--box > p{
-    position: relative; /* Ajusta el posicionamiento relativo para que la sombra del texto se aplique correctamente */
+
+.personajesPrincipales--box>p {
+    position: relative;
+    /* Ajusta el posicionamiento relativo para que la sombra del texto se aplique correctamente */
     background-color: rgba(238, 130, 238, 0.802);
     box-shadow: 0 0 10px black;
     border-radius: 100px;
@@ -313,21 +329,21 @@ text-decoration: none;
 
 
 
-/*historia*/
+/*SECCION historia*/
 
-#historia{
+#historia {
     margin: 0;
     padding: -20000px;
 }
 
-.background{
+.background {
     background: url("/assets/img/fotohaeditada.png") no-repeat center center fixed;
     min-height: 100vh;
     background-size: cover;
 }
 
 
-.info-history{
+.info-history {
     margin: 300px;
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
     margin: 40px 200px;
@@ -338,16 +354,161 @@ text-decoration: none;
     line-height: 1.5;
 }
 
-/*Seccion de historia*/
+/*SECCION de jutsus y tecnicas*/
+#jutsustecnicas {
+    background: url("https://images8.alphacoders.com/122/1222712.jpg") no-repeat right center fixed;
+    background-size: cover;
+}
 
-/*Seccion de jutsus y tecnicas*/
+
+.contenedor {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.imagen1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.imagen2 {
+    width: 200px;
+    height: 200px;
+    background: url("https://staticg.sportskeeda.com/editor/2022/06/887c1-16565892147226-1920.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.imagen3 {
+    width: 200px;
+    height: 200px;
+    background: url("https://staticg.sportskeeda.com/editor/2022/06/887c1-16565892147226-1920.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.contenido {
+    flex: 1;
+    padding: 0 20px;
+}
 
 /*Seccion de aldea y localización*/
 
-/*Seccion de curiosidades*/
+#aldealocalizacion {
+    background:url("/assets/img/mapaAldeas.png") no-repeat center center fixed;
+    background-size: cover;
+    align-items: center;
+    
+}
 
-/*Seccion de galeria*/
+.flexbox--aldea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
 
-/*Seccion de about us*/
+.imagen-posterior>img {
+    width: 500px;
+    height: 500px;
+    background: center center;
+    border-radius: 15px;
+}
 
-/*Seccion de pie de página*/
+.carta {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    perspective: 1000px;
+    margin: 50px;
+}
+
+.cara {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+    filter: drop-shadow(0 10px 15px black);
+}
+
+
+.trasera {
+    background-color: #d3d3d3;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.carta:hover .frontal {
+    transform: rotateY(180deg);
+}
+
+.carta:hover .trasera {
+    transform: rotateY(0deg);
+}
+
+
+/*SECCION de galeria*/
+
+#galeria {
+background:url("https://static.vecteezy.com/system/resources/previews/005/582/059/non_2x/chalk-rubbed-out-on-blackboard-chalkboard-texture-background-copy-space-for-add-text-and-design-free-photo.jpg") no-repeat center center fixed;
+background-size: cover;   
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+.foto {
+    flex: 1 0 450px;
+    margin: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 15px black);
+    
+
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.736);
+}
+
+.foto:hover {
+    flex: 1 0 700px;
+}
+
+
+/*SECCION de pie de página*/
+
+#mainfooter{
+    margin: 100px;
+    color: wheat;
+}
+.socialMedia{
+
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    margin: 0 30px 30px 30px;
+}
