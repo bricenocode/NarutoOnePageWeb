@@ -119,7 +119,7 @@ ul {
 /*SECCION personajes Principales*/
 
 #personajesPrincipales {
-    background: url("/assets/img/background.jpg") no-repeat center center fixed;
+    background: url("../img/background.jpg") no-repeat center center fixed;
     min-height: 100vh;
     background-size: cover;
     text-align: center;
@@ -337,7 +337,7 @@ ul {
 }
 
 .background {
-    background: url("/assets/img/fotohaeditada.png") no-repeat center center fixed;
+    background: url("../img/fotohaeditada.png") no-repeat center center fixed;
     min-height: 100vh;
     background-size: cover;
 }
@@ -401,7 +401,7 @@ ul {
 /*Seccion de aldea y localización*/
 
 #aldealocalizacion {
-    background:url("/assets/img/mapaAldeas.png") no-repeat center center fixed;
+    background:url("../img/mapaAldeas.jpg")no-repeat center center fixed;
     background-size: cover;
     align-items: center;
     
@@ -442,7 +442,7 @@ ul {
 
 
 .trasera {
-    background-color: #d3d3d3;
+    background-color: #422d2d;
     transform: rotateY(180deg);
     border-radius: 15px;
 }
@@ -455,11 +455,25 @@ ul {
     transform: rotateY(0deg);
 }
 
+.trasera > h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: rgb(246, 246, 199);
+}
+
+.trasera > p {
+    text-align: justify;
+    margin: 20px 70px;
+    color: rgb(255, 255, 255);
+}
 
 /*SECCION de galeria*/
 
 #galeria {
-background:url("https://static.vecteezy.com/system/resources/previews/005/582/059/non_2x/chalk-rubbed-out-on-blackboard-chalkboard-texture-background-copy-space-for-add-text-and-design-free-photo.jpg") no-repeat center center fixed;
+background:url("../img/fondoGaleria.webp") no-repeat center center fixed;
 background-size: cover;   
 }
 
@@ -498,7 +512,6 @@ background-size: cover;
     color: wheat;
 }
 .socialMedia{
-
 }
 
 .list{
@@ -511,4 +524,12 @@ background-size: cover;
 
 .item{
     margin: 0 30px 30px 30px;
+}
+
+.logo--rrss{
+    width: 30px;
+}
+
+.logo--rrss:hover{
+    width: 40px;
 }
