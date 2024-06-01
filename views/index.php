@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naruto Shippuden</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="../assets/img/icono.png">
 </head>
 
@@ -14,6 +15,10 @@
     <!--Seccion del menu de navegacion-->
 
     <nav class="nav" id="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+        </label>
         <ul class="nav nav__list">
             <li class="nav__item"><a href="#main-header" class="nav__link">INICIO</a></li>
             <li class="nav__item"><a href="#personajesPrincipales" class="nav__link">PERSONAJES PRINCIPALES</a></li>
@@ -45,7 +50,7 @@
                     <br><br>
                     ¡Gracias por visitarnos y disfruta de tu estancia en el mundo ninja!
                 </p>
-                <a href="#nav" class="boton-volver">Volver al inicio</a>
+                <a href="#main-header" class="boton-volver">Volver al inicio</a>
             </div>
         </div>
     </header>

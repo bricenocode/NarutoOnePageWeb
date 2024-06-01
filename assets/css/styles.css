@@ -7,10 +7,9 @@
     box-sizing: border-box;
 }
 
-
 /*SECCION del menu de navegacion*/
 body {
-    background: url("https://images7.alphacoders.com/100/1009267.png") no-repeat center center fixed;
+    background: url("https://images7.alphacoders.com/100/1009267.png") no-repeat center bottom fixed;
     margin: 0;
     font-family: "Contrail One", sans-serif;
     background-size: cover;
@@ -23,6 +22,13 @@ ul {
     list-style: none;
 }
 
+.checkbtn{
+    display: none;
+}
+
+#check{
+    display: none;
+}
 .nav {
     background-color: transparent;
     text-align: center;
@@ -35,6 +41,7 @@ ul {
 
 .nav__item {
     display: inline-block;
+    margin-top: 0.5%;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.228);
     border-radius: 20px;
@@ -79,7 +86,6 @@ ul {
 /*main-header*/
 .main-header {
     text-align: center;
-
 }
 
 .logo {
@@ -88,7 +94,6 @@ ul {
 }
 
 .box {
-
     box-sizing: border-box;
     margin: auto;
     min-width: 800px;
@@ -117,7 +122,6 @@ ul {
 }
 
 /*SECCION personajes Principales*/
-
 #personajesPrincipales {
     background: url("../img/background.jpg") no-repeat center center fixed;
     min-height: 100vh;
@@ -132,7 +136,6 @@ ul {
     padding: 0;
 }
 
-
 .container>h2 {
     text-align: center;
     font-size: 58px;
@@ -142,19 +145,14 @@ ul {
 }
 
 .personajesPrincipales--column {
-
     max-width: 900px;
     width: 900px;
     margin: auto;
     overflow: hidden;
-    /* Oculta el contenido que se desborda del contenedor */
     padding-bottom: 150px;
-
 }
 
 /*--imagenes personajes*/
-
-
 .imagenNaruto,
 .imagenSakura,
 .imagenSasuke,
@@ -205,7 +203,6 @@ ul {
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0, 1.04, .44, 1.17);
 }
-
 
 /*--Posicion Derecha*/
 .imagenSasuke {
@@ -290,7 +287,6 @@ ul {
     left: 640px;
 }
 
-
 /*--iconos de naturaleza de chakra*/
 .flexbox {
     display: flex;
@@ -315,7 +311,6 @@ ul {
 
 .personajesPrincipales--box>p {
     position: relative;
-    /* Ajusta el posicionamiento relativo para que la sombra del texto se aplique correctamente */
     background-color: rgba(238, 130, 238, 0.802);
     box-shadow: 0 0 10px black;
     border-radius: 100px;
@@ -327,10 +322,7 @@ ul {
     color: white;
 }
 
-
-
 /*SECCION historia*/
-
 #historia {
     margin: 0;
     padding: -20000px;
@@ -341,7 +333,6 @@ ul {
     min-height: 100vh;
     background-size: cover;
 }
-
 
 .info-history {
     margin: 300px;
@@ -359,7 +350,6 @@ ul {
     background: url("https://images8.alphacoders.com/122/1222712.jpg") no-repeat right center fixed;
     background-size: cover;
 }
-
 
 .contenedor {
     background-color: rgb(255, 255, 255);
@@ -399,12 +389,10 @@ ul {
 }
 
 /*Seccion de aldea y localización*/
-
 #aldealocalizacion {
-    background:url("../img/mapaAldeas.jpg")no-repeat center center fixed;
+    background: url("../img/mapaAldeas.jpg") no-repeat center center fixed;
     background-size: cover;
     align-items: center;
-    
 }
 
 .flexbox--aldea {
@@ -429,6 +417,7 @@ ul {
     position: relative;
     perspective: 1000px;
     margin: 50px;
+    word-wrap: break-word;
 }
 
 .cara {
@@ -440,11 +429,11 @@ ul {
     filter: drop-shadow(0 10px 15px black);
 }
 
-
 .trasera {
     background-color: #422d2d;
     transform: rotateY(180deg);
     border-radius: 15px;
+    word-wrap: break-word;
 }
 
 .carta:hover .frontal {
@@ -455,32 +444,33 @@ ul {
     transform: rotateY(0deg);
 }
 
-.trasera > h2 {
+.trasera>h2 {
     text-align: center;
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
     text-shadow: 0 0 10px rgb(0, 0, 0);
     color: rgb(246, 246, 199);
+    
 }
 
-.trasera > p {
+.trasera>p {
     text-align: justify;
     margin: 20px 70px;
     color: rgb(255, 255, 255);
+    
 }
 
 /*SECCION de galeria*/
-
 #galeria {
-background:url("../img/fondoGaleria.webp") no-repeat center center fixed;
-background-size: cover;   
+    background: url("../img/fondoGaleria.webp") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .galeria {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -489,14 +479,12 @@ background-size: cover;
     margin: 10px;
     overflow: hidden;
     filter: drop-shadow(0 0 15px black);
-    
-
 }
 
 .foto img {
     width: 100%;
     height: auto;
-    display:inline-block;
+    display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0.736);
 }
 
@@ -504,17 +492,16 @@ background-size: cover;
     flex: 1 0 700px;
 }
 
-
 /*SECCION de pie de página*/
-
-#mainfooter{
+#mainfooter {
     margin: 100px;
     color: wheat;
 }
-.socialMedia{
+
+.socialMedia {
 }
 
-.list{
+.list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -522,14 +509,396 @@ background-size: cover;
     justify-content: center;
 }
 
-.item{
+.item {
     margin: 0 30px 30px 30px;
 }
 
-.logo--rrss{
+.logo--rrss {
     width: 30px;
 }
 
-.logo--rrss:hover{
+.logo--rrss:hover {
     width: 40px;
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .container {
+        margin: auto;
+        max-width: 100%;
+        overflow: auto;
+        padding: 0 20px;
+    }
+.box--img{
+    left: -40%;
+    top: 300px;
+}
+
+    .nav{position: fixed;
+        z-index: 3;
+        right: 2%;
+    }
+
+    .main-header>p {
+        margin: 15%;
+    }
+
+    .nav__list{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(35, 27, 10);
+        z-index: 3;
+        top: 40px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav__item{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        background-color: transparent;
+        
+    }
+
+    .nav__item a{
+        font-size: 40px;
+        color:white;
+    }
+    .nav__item:hover {
+        background: linear-gradient(to right, rgba(18, 8, 8, 0.547), rgba(18, 8, 8, 0.547));
+    }
+    
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(255, 255, 255);
+    }    
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .checkbtn{
+        display: block;
+        left: -200px;
+        position: static;
+    }
+    .box {
+        min-width: 600px;
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .box--img {
+        height: 300px;
+        right: 200px;
+        position: relative;
+    }
+
+    
+    .main-header>p {
+        font-size: 20px;
+        padding: 40px;
+        top: -250px;
+    }
+    
+    .personajesPrincipales--column {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .imagenNaruto, .imagenSakura {
+        width: 18%;
+        left: 0;
+        top: 1%;
+    }
+    
+    .imagenJiraya,.imagenNagato{
+        width: 20%;
+        left: 0;
+        top: 1%;
+    }
+
+    .imagenSasuke, .imagenKakashi,.imagenObito,.imagenItachi{
+        width: 23%;
+        left: 80%;
+        top: 10%;
+    }
+
+    .imagenNaruto:hover, .imagenSakura:hover, .imagenJiraya:hover, .imagenNagato:hover {
+        width: 21%;
+    }
+
+    .imagenKakashi:hover, .imagenSasuke:hover, .imagenObito:hover, .imagenItachi:hover {
+        width: 21%;
+        left: 79%;
+        top: 10%;
+    }
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: absolute;
+        top: -30px;
+        left: 180px;
+    }
+    
+    .flex-item {
+        margin: 0 1px;
+    }
+    
+    .icon-element {
+        width: 35px;
+    }
+    
+    .icon-element:hover {
+        width: 60px;
+    }
+    
+    .personajesPrincipales--box>p {
+        width: 500px;
+        left: 100px;
+        padding: 40px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+
+    .nav{position: fixed;
+        z-index: 3;
+        right: 2%;
+    }
+
+    .nav__list{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(35, 27, 10);
+        z-index: 3;
+        top: 40px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav__item{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        background-color: transparent;
+        
+    }
+
+    .nav__item a{
+        font-size: 40px;
+        color:white;
+    }
+    .nav__item:hover {
+        background: linear-gradient(to right, rgba(18, 8, 8, 0.547), rgba(18, 8, 8, 0.547));
+    }
+    
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(255, 255, 255);
+    }    
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .checkbtn{
+        display: block;
+        left: -200px;
+        position: static;
+    }
+
+    .container {
+        margin: auto;
+        max-width: 100%;
+        overflow: auto;
+        padding: 0 20px;
+    }
+    
+    .box {
+        min-width: 100%;
+        width: 100%;
+    }
+    
+    .box--img {
+        height: 250px;
+        right: 10%;
+    }
+    
+    .main-header>p {
+        font-size: 18px;
+        padding: 30px;
+        top: -200px;
+    }
+
+    .main-header {
+        margin: 1%;
+    }
+    
+    .personajesPrincipales--column {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+
+    .imagenNaruto, .imagenSakura, .imagenSasuke, .imagenKakashi,.imagenObito,.imagenItachi, .imagenJiraya,.imagenNagato{
+        width: 23%;
+        left: 65%;
+        top: -42%;
+    }
+
+    .imagenSakura{
+        width: 15%;
+    }
+
+    .imagenKakashi,.imagenItachi{
+        width: 40%;
+        left: 60%;
+        top: -60%;
+    }
+
+    .imagenNagato{
+        width: 35%;
+        left: 60%;
+        top: -35%;
+    }
+
+    .imagenObito{
+        width: 40%;
+    }
+    
+    .personajesPrincipales--box>p {
+        width: 98%;
+        left: 1%;
+        padding: 10%;
+    }  
+    /*--iconos de naturaleza de chakra*/
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    top: -30px;
+    left: 10%
+}
+
+.flex-item {
+    margin: 0 1px;
+}
+
+.icon-element {
+    width: 20px;
+}
+
+.icon-element:hover {
+    width: 25px;
+}
+    
+    .info-history {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    
+.foto {
+    flex: 1 0 70%;
+    margin: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 15px black);
+}
+
+
+.foto:hover {
+    flex: 1 0 90%;
+}
+
+
+}
+
+@media (max-width: 600px){
+    .imagen-posterior>img {
+        width: 95%;
+        background: center center;
+        border-radius: 15px;
+    }
+    
+    .carta {
+        width: 500px;
+        height: 600px;
+        position: relative;
+        perspective: 1000px;
+        margin: 50px;
+        word-wrap: break-word;
+    }
+    
+    .cara {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: transform 0.6s;
+        backface-visibility: hidden;
+        filter: drop-shadow(0 10px 15px black);
+    }
+    
+    .trasera {
+        background-color: #422d2d;
+        transform: rotateY(180deg);
+        border-radius: 15px;
+        word-wrap: break-word;
+    }
+    
+    .carta:hover .frontal {
+        transform: rotateY(180deg);
+    }
+    
+    .carta:hover .trasera {
+        transform: rotateY(0deg);
+    }
+    
+    .trasera>h2 {
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-shadow: 0 0 10px rgb(0, 0, 0);
+        color: rgb(246, 246, 199);
+        
+    }
+    
+    .trasera>p {
+        text-align: justify;
+        margin: 20px 70px;
+        color: rgb(255, 255, 255);
+        
+    }
+}
+
+@media (max-width: 500px){
+    .carta {
+        width: 500px;
+        height: 800px;
+        position: relative;
+        perspective: 1000px;
+        margin: 50px;
+        word-wrap: break-word
+        
+    }
+
+    .trasera>p {
+        text-align: justify;
+        margin: 10px 20px;
+        color: rgb(255, 255, 255);
+        
+    }
+    
 }
