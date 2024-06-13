@@ -401,7 +401,7 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
+    overflow: auto;
 }
 
 .imagen-posterior>img {
@@ -417,7 +417,8 @@ ul {
     position: relative;
     perspective: 1000px;
     margin: 50px;
-    word-wrap: break-word;
+    overflow: auto;
+
 }
 
 .cara {
@@ -433,7 +434,7 @@ ul {
     background-color: #422d2d;
     transform: rotateY(180deg);
     border-radius: 15px;
-    word-wrap: break-word;
+    overflow: auto;
 }
 
 .carta:hover .frontal {
@@ -458,7 +459,7 @@ ul {
     text-align: justify;
     margin: 20px 70px;
     color: rgb(255, 255, 255);
-    
+    overflow: auto;
 }
 
 /*SECCION de galeria*/
