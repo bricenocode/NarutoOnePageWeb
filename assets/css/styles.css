@@ -417,7 +417,7 @@ ul {
     position: relative;
     perspective: 1000px;
     margin: 50px;
-    overflow: auto;
+    
 
 }
 
@@ -454,12 +454,14 @@ ul {
     color: rgb(246, 246, 199);
     
 }
-
+.cara--trasera--contenedor{
+    background-color: grey;
+    border: 2px solid black;
+}
 .trasera>p {
     text-align: justify;
     margin: 20px 70px;
     color: rgb(255, 255, 255);
-    overflow: auto;
 }
 
 /*SECCION de galeria*/
