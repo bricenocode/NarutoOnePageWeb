@@ -1,5 +1,5 @@
 <?php
-$host = "localhost"; 
+$host = "127.0.0.1";
 $username = "adminbasic"; 
 $password = "A1b2C3?"; 
 $dbname = "onepagenaruto"; 

@@ -2,11 +2,11 @@
 include 'conection.php';
 
 $aldeas = [
-    1 => "../assets/img/konoha.jpg",
-    5 => "../assets/img/aldeaArena.webp",
-    4 => "../assets/img/aldeaNiebla.webp",
-    2 => "../assets/img/aldeaNubes.jpg",
-    3 => "../assets/img/aldeaRocas.webp"
+    1 => "assets/img/konoha.jpg",
+    5 => "assets/img/aldeaArena.webp",
+    4 => "assets/img/aldeaNiebla.webp",
+    2 => "assets/img/aldeaNubes.jpg",
+    3 => "assets/img/aldeaRocas.webp"
 ];
 
 echo '<div class="flexbox--aldea">';

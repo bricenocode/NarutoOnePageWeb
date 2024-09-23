@@ -36,7 +36,7 @@
                 class="main-header logo">
             <div class="main-header box">
                 <img src="https://www.pngall.com/wp-content/uploads/13/Naruto-Uzumaki-PNG-Cutout.png"
-                    alt="imagen de naruto de pie modo sobrado" class="box--img" alt="naruto re piola">
+                    alt="imagen de naruto de pie modo sobrado" class="box--img"">
                 <p>¡Bienvenidos a mi página de Naruto!<br><br>
 
                     Aquí encontrarás todo lo que necesitas saber sobre el increíble mundo de Naruto. Esta web está
@@ -176,7 +176,7 @@ A medida que la trama avanza, se revelan más sobre el pasado de Naruto, el orig
                 <li class="mainfooter item"><a href="https://github.com/bricenocode" target="_blank"><img
                             src="assets/img/logoGitHub.png" alt="Logo de Git Hub" class="logo--rrss"></a></li>
                 <li class="mainfooter item"><a href="https://www.linkedin.com/in/miguel-brice%C3%B1o-3777ab302/"
-                        target="_blank"><img src="/assets/img/logoLinkdn.webp" alt="Logo de Linkdn"
+                        target="_blank"><img src="assets/img/logoLinkdn.webp" alt="Logo de Linkdn"
                             class="logo--rrss"></a></li>
             </ul>
         </div>
