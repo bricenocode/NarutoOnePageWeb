@@ -4,22 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naruto Shippuden</title>
+    <title>Naruto Shippuden | El camino ninja</title>
+    <meta name="description" content="Explora personajes, historia, jutsus, aldeas y momentos de Naruto Shippuden en una one page creada por un fan.">
+    <meta name="theme-color" content="#111526">
+    <base href="../">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="../assets/img/icono.png">
 </head>
 
-<body>
+<body data-active-section="main-header">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <!--Seccion del menu de navegacion-->
 
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Navegación principal">
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-        </label>
-        <ul class="nav nav__list">
+        <div class="nav__inner">
+            <a class="nav__brand" href="#main-header" aria-label="Naruto One Page, inicio"><img src="../assets/img/icono.png" alt=""> Naruto One Page</a>
+            <label for="check" class="checkbtn" aria-label="Abrir menú"></label>
+        <ul class="nav__list">
             <li class="nav__item"><a href="#main-header" class="nav__link">INICIO</a></li>
             <li class="nav__item"><a href="#personajesPrincipales" class="nav__link">PERSONAJES PRINCIPALES</a></li>
             <li class="nav__item"><a href="#historia" class="nav__link">HISTORIA</a></li>
@@ -27,16 +33,19 @@
             <li class="nav__item"><a href="#aldealocalizacion" class="nav__link">ALDEAS Y LOCALIZACIONES</a></li>
             <li class="nav__item"><a href="#galeria" class="nav__link">GALERIA</a></li>
         </ul>
+        </div>
     </nav>
     <!--Seccion de bienvenida a la página-->
 
     <header class="main-header" id="main-header">
-        <div class="container">
+        <div class="container hero" id="contenido">
             <img src="https://i.ebayimg.com/images/g/C4QAAOSwrPJhsUos/s-l1600.png" alt="Logo de naruto"
                 class="main-header logo">
-            <div class="main-header box">
+            <div class="main-header box hero__content">
+                <span class="section-kicker">Una historia de voluntad</span>
+                <h1>El camino ninja</h1>
                 <img src="https://www.pngall.com/wp-content/uploads/13/Naruto-Uzumaki-PNG-Cutout.png"
-                    alt="imagen de naruto de pie modo sobrado" class="box--img" alt="naruto re piola">
+                    alt="Naruto Uzumaki de pie" class="box--img">
                 <p>¡Bienvenidos a mi página de Naruto!<br><br>
 
                     Aquí encontrarás todo lo que necesitas saber sobre el increíble mundo de Naruto. Esta web está
@@ -50,7 +59,10 @@
                     <br><br>
                     ¡Gracias por visitarnos y disfruta de tu estancia en el mundo ninja!
                 </p>
-                <a href="#main-header" class="boton-volver">Volver al inicio</a>
+                <div class="hero__actions">
+                    <a href="#personajesPrincipales" class="button">Explorar personajes</a>
+                    <a href="#historia" class="button button--ghost">Conocer la historia</a>
+                </div>
             </div>
         </div>
     </header>
@@ -182,6 +194,7 @@ A medida que la trama avanza, se revelan más sobre el pasado de Naruto, el orig
         </div>
         <p>Naruto One Page Web 2024&copy;</p>
     </footer>
+    <script src="../assets/js/app.js" defer></script>
 </body>
 
 </html>

@@ -4,21 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naruto Shippuden</title>
+    <title>Naruto Shippuden | El camino ninja</title>
+    <meta name="description" content="Explora personajes, historia, jutsus, aldeas y momentos de Naruto Shippuden en una one page creada por un fan.">
+    <meta name="theme-color" content="#111526">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="assets/img/icono.png">
 </head>
 
-<body>
+<body data-active-section="main-header">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <!--Seccion del menu de navegacion-->
 
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Navegación principal">
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+        <div class="nav__inner">
+            <a class="nav__brand" href="#main-header" aria-label="Naruto One Page, inicio"><img src="assets/img/icono.png" alt=""> Naruto One Page</a>
+            <label for="check" class="checkbtn" aria-label="Abrir menú"></label>
         <ul class="nav nav__list">
             <li class="nav__item"><a href="#main-header" class="nav__link">INICIO</a></li>
             <li class="nav__item"><a href="#personajesPrincipales" class="nav__link">PERSONAJES PRINCIPALES</a></li>
@@ -27,14 +32,17 @@
             <li class="nav__item"><a href="#aldealocalizacion" class="nav__link">ALDEAS Y LOCALIZACIONES</a></li>
             <li class="nav__item"><a href="#galeria" class="nav__link">GALERIA</a></li>
         </ul>
+        </div>
     </nav>
     <!--Seccion de bienvenida a la página-->
 
     <header class="main-header" id="main-header">
-        <div class="container">
+        <div class="container hero" id="contenido">
             <img src="https://i.ebayimg.com/images/g/C4QAAOSwrPJhsUos/s-l1600.png" alt="Logo de naruto"
                 class="main-header logo">
-            <div class="main-header box">
+            <div class="main-header box hero__content">
+                <span class="section-kicker">Una historia de voluntad</span>
+                <h1>El camino ninja</h1>
                 <img src="https://www.pngall.com/wp-content/uploads/13/Naruto-Uzumaki-PNG-Cutout.png"
                     alt="imagen de naruto de pie modo sobrado" class="box--img">
                 <p>¡Bienvenidos a mi página de Naruto!<br><br>
@@ -50,7 +58,10 @@
                     <br><br>
                     ¡Gracias por visitarnos y disfruta de tu estancia en el mundo ninja!
                 </p>
-                <a href="#main-header" class="boton-volver">Volver al inicio</a>
+                <div class="hero__actions">
+                    <a href="#personajesPrincipales" class="button">Explorar personajes</a>
+                    <a href="#historia" class="button button--ghost">Conocer la historia</a>
+                </div>
             </div>
         </div>
     </header>
@@ -66,8 +77,8 @@
                     <p>Naruto Uzumaki es un joven ninja de Konoha, conocido por su espíritu indomable y su determinación. Sueña con convertirse en el Hokage, líder máximo de su aldea, y trabaja incansablemente para lograrlo. En Naruto Shippuden, descubre que tiene al Zorro de Nueve Colas sellado en su cuerpo, lo que lo lleva a enfrentar desafíos para ganarse el respeto de sus compañeros. En la temporada, Naruto se involucra en una guerra entre aldeas y enfrenta poderosos enemigos que amenazan la paz del mundo ninja. Su propósito principal es proteger a sus seres queridos y a su aldea, incluso enfrentando peligros inimaginables. Destaca por su habilidad en el combate y desarrolla técnicas ninjas poderosas como el Rasengan y el Modo Sabio.
 
                     </p>
-                    <img src="https://i.pinimg.com/originals/d3/46/91/d346917deed14e8075f531c9d8c46ab7.png"
-                        class="imagenNaruto" alt="imagen pepona" title="Naruto Uzumaki">
+                    <img loading="lazy" decoding="async" src="https://i.pinimg.com/originals/d3/46/91/d346917deed14e8075f531c9d8c46ab7.png"
+                        class="imagenNaruto" alt="Naruto Uzumaki en posición de combate" title="Naruto Uzumaki">
                     <div class="flexbox">
                         <div class="flex-item"><img src="assets/img/INCENDIO.png" alt="" class="icon-element"
                                 title="INCENDIO"></div>
@@ -524,6 +535,7 @@
         </div>
         <p>Naruto One Page Web 2024&copy;</p>
     </footer>
+    <script src="assets/js/app.js" defer></script>
 </body>
 
 </html>

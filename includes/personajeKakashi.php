@@ -1,5 +1,5 @@
 <?php
-include 'conection.php';
+require_once __DIR__ . '/conection.php';
 
 $query_description = $pdo->query("SELECT nombre, apellido, descripcion FROM personaje WHERE id_personaje=3");
 $personaje = $query_description->fetch(PDO::FETCH_ASSOC);
@@ -19,6 +19,6 @@ $personaje = $query_description->fetch(PDO::FETCH_ASSOC);
                                 title="FUEGO"></div>
                         <div class="flex-item"><img src="assets/img/TIERRA.png" alt="" class="icon-element"
                                 title="TIERRA"></div>
-                        <div class="flex-item"><img src=".assets/img/VIENTO.png" alt="" class="icon-element"
+                        <div class="flex-item"><img src="assets/img/VIENTO.png" alt="VIENTO" class="icon-element"
                                 title="VIENTO"></div>
                     </div>

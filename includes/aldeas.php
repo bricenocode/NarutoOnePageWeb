@@ -1,5 +1,5 @@
 <?php
-include 'conection.php';
+require_once __DIR__ . '/conection.php';
 
 $aldeas = [
     1 => "assets/img/konoha.jpg",
@@ -21,7 +21,7 @@ foreach ($aldeas as $id => $image) {
         <div class="carta">
             <div class="cara frontal">
                 <div class="imagen-posterior">
-                    <img src="' . htmlspecialchars($image) . '" alt="">
+                    <img src="' . htmlspecialchars($image) . '" alt="Paisaje de ' . htmlspecialchars($aldea['nombre']) . '" loading="lazy" decoding="async">
                 </div>
             </div>
             <div class="cara trasera">

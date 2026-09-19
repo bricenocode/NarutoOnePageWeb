@@ -1,5 +1,5 @@
 <?php
-include 'conection.php';
+require_once __DIR__ . '/conection.php';
 
 $query_description = $pdo->query("SELECT nombre, apellido, descripcion FROM personaje WHERE id_personaje=4");
 $personaje = $query_description->fetch(PDO::FETCH_ASSOC);

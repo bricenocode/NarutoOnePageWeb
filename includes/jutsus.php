@@ -1,5 +1,5 @@
 <?php
-include 'conection.php';
+require_once __DIR__ . '/conection.php';
 
 $jutsus = [
     1 => "https://i1.sndcdn.com/artworks-ObJ16eu38XL6tDim-3zMhNg-t500x500.jpg",
@@ -23,7 +23,7 @@ foreach ($jutsus as $id => $image) {
         echo '
         <div class="contenedor">
             <div class="imagen">
-                <img src="' . htmlspecialchars($image) . '" alt="" class="imagen1">
+                <img src="' . htmlspecialchars($image) . '" alt="Ilustración del jutsu ' . htmlspecialchars($jutsu['nombre']) . '" class="imagen1" loading="lazy" decoding="async">
             </div>
             <div class="contenido">
                 <h2>' . htmlspecialchars($jutsu['nombre']) . '</h2>
